@@ -11,13 +11,14 @@
         //$vala = $vala++;
 
      }
+     echo '<br>';
 //do while: haga, hasta que
      do {
          
           echo $valb = $valb +2;
 
      } while ($valb <= 20);
-
+     echo '<br>';
 //For:      
      for ($vala=0; $vala < 10; $vala++) { 
           echo $vala;

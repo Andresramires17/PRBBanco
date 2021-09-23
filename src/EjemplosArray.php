@@ -35,7 +35,31 @@
     echo '<br>';
      for ($i=0; $i < count($semana) ; $i++) { 
          
-        echo $semana[$i];
+        //echo $semana[$i];
+        if ($semana[$i] == 'sabado<br>'&&'domingo<br>') {
+           
+         echo 'es fin de semana';
+        }
      }
+     echo '<br>';
+     echo '<br>';
+     $amigos = array('Carlos<br>','Camilo<br>','Sonia<br>','Pedro<br>','Pablo<br>','Jasinto<br>' );
+     //Encontrar o mostrar la posición de un elementos
+     $amigos[3] = 'Jose<br>';
+     $posición = count($amigos)-3;
+     echo '<br>';
+     echo '<br>';
+
+     echo 'la posición es : '.$amigos[$posición];
+     echo '<br>';
+     echo '<br>';
+
+     //asort orden alfábetico desendente en un arreglo
+     //rsort orden alfábetico asendente en un arreglo
+     //arsort mantiene el indice de los elementos en el arreglo orden alfábetico asendente
+     arsort($amigos);
+     
+
+     print_r($amigos);
      
 ?>
